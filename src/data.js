@@ -1,0 +1,47 @@
+// Add or edit products here. Keep English, Kannada and Hindi names together.
+export const categories = [
+  { id: "all", en: "All vegetables", kn: "ಎಲ್ಲಾ ತರಕಾರಿಗಳು", hi: "सभी सब्ज़ियाँ" },
+  { id: "daily", en: "Daily vegetables", kn: "ದೈನಂದಿನ ತರಕಾರಿಗಳು", hi: "रोज़मर्रा की सब्ज़ियाँ" },
+  { id: "leafy", en: "Leafy vegetables", kn: "ಸೊಪ್ಪುಗಳು", hi: "पत्तेदार सब्ज़ियाँ" },
+  { id: "other", en: "Other vegetables", kn: "ಇತರೆ ತರಕಾರಿಗಳು", hi: "अन्य सब्ज़ियाँ" }
+];
+
+export const products = [
+  ["tomato","Tomato","ಟೊಮೇಟೊ","टमाटर","🍅","daily"],
+  ["onion","Onion","ಈರುಳ್ಳಿ","प्याज़","🧅","daily"],
+  ["potato","Potato","ಆಲೂಗಡ್ಡೆ","आलू","🥔","daily"],
+  ["carrot","Carrot","ಕ್ಯಾರೆಟ್","गाजर","🥕","daily"],
+  ["beetroot","Beetroot","ಬೀಟ್ರೂಟ್","चुकंदर","🫜","daily"],
+  ["brinjal","Brinjal","ಬದನೆಕಾಯಿ","बैंगन","🍆","daily"],
+  ["green-chilli","Green chilli","ಹಸಿಮೆಣಸಿನಕಾಯಿ","हरी मिर्च","🌶️","daily"],
+  ["capsicum","Capsicum","ದಪ್ಪ ಮೆಣಸಿನಕಾಯಿ","शिमला मिर्च","🫑","daily"],
+  ["cucumber","Cucumber","ಸೌತೆಕಾಯಿ","खीरा","🥒","daily"],
+  ["bottle-gourd","Bottle gourd","ಸೋರೆಕಾಯಿ","लौकी","🥒","daily"],
+  ["ridge-gourd","Ridge gourd","ಹೀರೆಕಾಯಿ","तुरई","🥒","daily"],
+  ["bitter-gourd","Bitter gourd","ಹಾಗಲಕಾಯಿ","करेला","🥒","daily"],
+  ["ash-gourd","Ash gourd","ಬೂದುಗುಂಬಳ","पेठा","🎃","daily"],
+  ["pumpkin","Pumpkin","ಕುಂಬಳಕಾಯಿ","कद्दू","🎃","daily"],
+  ["beans","Beans","ಬೀನ್ಸ್","फलियाँ","🫘","daily"],
+  ["okra","Okra / Ladies finger","ಬೆಂಡೆಕಾಯಿ","भिंडी","🥬","daily"],
+  ["cabbage","Cabbage","ಎಲೆಕೋಸು","पत्ता गोभी","🥬","daily"],
+  ["cauliflower","Cauliflower","ಹೂಕೋಸು","फूलगोभी","🥦","daily"],
+  ["broccoli","Broccoli","ಬ್ರೊಕೋಲಿ","ब्रोकोली","🥦","other"],
+  ["drumstick","Drumstick","ನುಗ್ಗೆಕಾಯಿ","सहजन","🌿","daily"],
+  ["raw-banana","Raw banana","ಬಾಳೆಕಾಯಿ","कच्चा केला","🍌","daily"],
+  ["sweet-potato","Sweet potato","ಸಿಹಿ ಆಲೂಗಡ್ಡೆ","शकरकंद","🍠","other"],
+  ["radish","Radish","ಮೂಲಂಗಿ","मूली","🥕","other"],
+  ["turnip","Turnip","ನವಿಲುಕೋಸು","शलजम","🥔","other"],
+  ["corn","Sweet corn","ಸಿಹಿ ಜೋಳ","स्वीट कॉर्न","🌽","other"],
+  ["spring-onion","Spring onion","ಸ್ಪ್ರಿಂಗ್ ಈರುಳ್ಳಿ","हरा प्याज़","🧅","other"],
+  ["coriander","Coriander leaves","ಕೊತ್ತಂಬರಿ ಸೊಪ್ಪು","धनिया पत्ता","🌿","leafy"],
+  ["mint","Mint leaves","ಪುದೀನಾ ಸೊಪ್ಪು","पुदीना","🌿","leafy"],
+  ["spinach","Spinach","ಪಾಲಕ್ ಸೊಪ್ಪು","पालक","🥬","leafy"],
+  ["amaranth","Amaranth leaves","ದಂಟಿನ ಸೊಪ್ಪು","चौलाई","🌿","leafy"],
+  ["fenugreek","Fenugreek leaves","ಮೆಂತ್ಯೆ ಸೊಪ್ಪು","मेथी","🌿","leafy"],
+  ["dill","Dill leaves","ಸಬ್ಬಸಿಗೆ ಸೊಪ್ಪು","सोया पत्ता","🌿","leafy"],
+  ["gongura","Gongura leaves","ಪುಂಡಿ ಸೊಪ್ಪು","गोंगुरा","🌿","leafy"],
+  ["basale","Malabar spinach","ಬಸಳೆ ಸೊಪ್ಪು","पोई साग","🌿","leafy"],
+  ["moringa-leaves","Drumstick leaves","ನುಗ್ಗೆ ಸೊಪ್ಪು","सहजन के पत्ते","🌿","leafy"],
+  ["curry-leaves","Curry leaves","ಕರಿಬೇವು","करी पत्ता","🌿","leafy"],
+  ["lettuce","Lettuce","ಲೆಟ್ಯೂಸ್ ಸೊಪ್ಪು","सलाद पत्ता","🥬","leafy"]
+].map(([id,en,kn,hi,emoji,category]) => ({id,en,kn,hi,emoji,category}));
