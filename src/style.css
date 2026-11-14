@@ -8,3 +8,85 @@
 @media(max-width:900px){.header{padding-left:5%;padding-right:5%;gap:12px}.nav{gap:13px}.nav>a{font-size:10px}.language{font-size:10px}.product-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.header{height:70px;position:sticky}.menu-toggle{display:block;order:3}.language{margin-left:auto}.nav{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:18px 6%;box-shadow:0 12px 20px #173b2d12;flex-direction:column;align-items:stretch;gap:17px}.nav.open{display:flex}.nav>a{font-size:13px}.nav .nav-order{justify-content:center}.hero{grid-template-columns:1fr;padding:55px 6% 55px;gap:10px}.hero-art{height:300px}.art-card{width:285px;height:260px}.art-glow{width:270px;height:270px}.produce{font-size:54px}.trust-strip{grid-template-columns:1fr 1fr;gap:18px;padding:22px 6%}.trust-strip>div{justify-content:flex-start;border:0}.trust-strip b{font-size:10px}.trust-strip small{font-size:9px}.section{padding:65px 6%}.section-heading{display:block}.section-heading h2,.section h2,.occasion-section h2,.contact-section h2{font-size:36px}.search-box{width:100%;margin:20px 0 0}.catalog-tools{margin-top:20px}.tabs{gap:7px}.tabs button{padding:9px 12px;font-size:10px}.price-note{align-items:flex-start;line-height:1.5;flex-wrap:wrap}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-emoji{height:105px;font-size:52px}.product-info{padding:12px}.product-bottom{align-items:center;flex-direction:row}.cart-bar{align-items:stretch;flex-direction:column}.occasion-inner{grid-template-columns:1fr;gap:35px}.occasion-section{padding:60px 6%}.occasion-cards{gap:9px}.occasion-card{padding:17px}.about-section{grid-template-columns:1fr;gap:18px;padding:60px 6%}.about-icon{width:75px;height:75px;font-size:37px;border-radius:20px}.about-points{gap:12px;flex-direction:column}.contact-section{grid-template-columns:1fr;gap:18px;padding:58px 6%}.contact-card{padding:18px}footer{padding:30px 6%;gap:15px}footer p{flex-basis:100%;order:2}footer>small{order:3}.footer-wa{margin-left:auto}.floating-wa{right:15px;bottom:15px}}
 @media(max-width:390px){.brand{gap:8px}.brand-mark{width:38px;height:38px}.language{gap:5px}.language select{padding:8px 6px}.product-grid{gap:8px}.product-info h3{font-size:14px}.product-info p{font-size:10px}}
+
+/* KG quantity controls and custom vegetable order form */
+.product-card.selectable{cursor:default}.product-card.selectable:hover{transform:translateY(-3px)}.select-product{width:100%;display:flex;align-items:center;justify-content:space-between;border:0;background:transparent;padding:0;color:#426b40;cursor:pointer;font:inherit;text-align:left}.select-product b{font-size:12px}.kg-control{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:9px 10px;background:#f3f7ee;border:1px solid #e2eadb;border-radius:8px;color:#426b40;font-size:11px;font-weight:700}.kg-control input{width:78px;border:1px solid #d8e4d1;border-radius:6px;padding:7px;background:#fff;color:#173b2d;font:inherit;text-align:center;outline-color:#739565}.custom-order{margin-top:22px;padding:20px;background:#f6f8f1;border:1px solid #e4ebdd;border-radius:12px}.custom-order h3{margin:0 0 14px;font-size:16px;color:#234a36}.custom-fields{display:grid;grid-template-columns:1fr 150px auto;gap:12px;align-items:end}.custom-fields label{display:flex;flex-direction:column;gap:7px;font-size:11px;font-weight:700;color:#627660}.custom-fields input{width:100%;height:43px;border:1px solid #dfe8d9;border-radius:7px;padding:0 11px;background:white;color:#173b2d;font:inherit;outline-color:#739565}.custom-fields .btn{height:43px;padding:0 16px;white-space:nowrap;border:0;cursor:pointer}.custom-error{font-size:11px;color:#b43c32;margin:10px 0 0}.custom-list{margin-top:13px;border-top:1px solid #e3eadc;padding-top:8px}.custom-list>div{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:7px 0;font-size:12px;color:#31583a}.custom-list button{border:0;background:transparent;color:#a34b3d;text-decoration:underline;cursor:pointer;font:inherit;font-size:11px}
+@media(max-width:620px){.custom-fields{grid-template-columns:1fr 105px}.custom-fields .btn{grid-column:1/-1;width:100%}.custom-order{padding:15px}.kg-control input{width:68px}}
+
+/* Custom vegetable quantity unit selector */
+.custom-fields select.custom-unit-select {
+  width: 100%;
+  height: 43px;
+  border: 1px solid #dfe8d9;
+  border-radius: 7px;
+  padding: 0 11px;
+  background: white;
+  color: #173b2d;
+  font: inherit;
+  outline-color: #739565;
+}
+@media (max-width: 700px) {
+  .custom-fields { grid-template-columns: 1fr 1fr; }
+  .custom-fields .btn { grid-column: 1 / -1; }
+}
+
+/* Horizontal swipe carousel for vegetable products */
+.product-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 2px 16px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #9bb58d #edf2e8;
+}
+
+.product-grid::-webkit-scrollbar {
+  height: 7px;
+}
+
+.product-grid::-webkit-scrollbar-track {
+  background: #edf2e8;
+  border-radius: 20px;
+}
+
+.product-grid::-webkit-scrollbar-thumb {
+  background: #9bb58d;
+  border-radius: 20px;
+}
+
+.product-card.selectable {
+  flex: 0 0 245px;
+  width: 245px;
+  max-width: 245px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 700px) {
+  .product-grid {
+    gap: 12px;
+    padding-bottom: 14px;
+  }
+
+  .product-card.selectable {
+    flex: 0 0 min(78vw, 270px);
+    width: min(78vw, 270px);
+    max-width: 270px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-grid {
+    scroll-behavior: auto;
+  }
+}
+
+
+/* Whole vegetable card is tappable; keyboard users can focus it too. */
+.product-card.selectable { cursor: pointer; }
+.product-card.selectable:focus-visible { outline: 3px solid #739565; outline-offset: 3px; }
+.product-card.selectable .selection-hint { font-size: 11px; font-weight: 700; color: #426b40; line-height: 1.4; }
